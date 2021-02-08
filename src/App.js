@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import TakeButton from './components/Button/TakeChallenge';
+import CreateButton from './components/Button/CreateAccount';
+import LoginButton from './components/Button/Login';
+import SignUpButton from './components/Button/SignUp';
+import ProceedButton from './components/Button/Proceed';
+import NextButton from './components/Button/Next';
+import {GlobalStyle} from './components/GlobalStyle/style';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{display: 'flex', flexDirection: 'column'}}>
+    <GlobalStyle/>
+        <div> <TakeButton color="#5332A6"/></div>
+        <div> <CreateButton color="#5332A6"/></div>
+        <div> <LoginButton color="#5332A6"/></div>
+        <div> <SignUpButton color="#5332A6"/></div>
+        <div> <ProceedButton color="#5332A6"/></div>
+        <div> <NextButton color="#42366D"/></div>
     </div>
   );
 }
