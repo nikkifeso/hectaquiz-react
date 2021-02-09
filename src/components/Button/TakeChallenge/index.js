@@ -1,13 +1,13 @@
 import React from 'react';
-import {TakeBtnStyle, TakeDiv, TextDiv} from './style'
+import {BtnStyle, BtnDiv, BtnText} from '../style';
 
-const TakeButton =({color})=> {
+const TakeButton =()=> {
     return (
-        <TakeDiv>
-            <TakeBtnStyle color={color}>
-                <TextDiv><div style={{paddingRight:"10px"}}>Take the Challenge</div><img src={process.env.PUBLIC_URL + "./fi_pocket.svg"} alt="arrow"/></TextDiv>    
-            </TakeBtnStyle>
-        </TakeDiv>
+        <BtnDiv padding="20px" width="270px" height="64px">
+            <BtnStyle padding="20px" color="#5332A6" hovercolor="#3908E4">
+                <BtnText weight="500"><div style={{paddingRight:"10px"}}>Take the Challenge</div><img src={process.env.PUBLIC_URL + "./fi_pocket.svg"} alt="arrow"/></BtnText>    
+            </BtnStyle>
+        </BtnDiv>
     )
 }
 

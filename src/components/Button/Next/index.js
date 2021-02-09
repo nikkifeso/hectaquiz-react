@@ -1,13 +1,13 @@
 import React from 'react';
-import {NextBtnStyle, NextDiv, NextTextDiv} from './style'
+import {BtnStyle, BtnDiv, BtnText} from '../style';
 
-const NextButton =({color})=> {
+const NextButton =()=> {
     return (
-        <NextDiv>
-            <NextBtnStyle color={color}>
-                <NextTextDiv><div style={{paddingRight:"10px"}}>Next Question </div><img src={process.env.PUBLIC_URL + "./fi_pocket.svg"} alt="arrow"/></NextTextDiv>       
-            </NextBtnStyle>
-        </NextDiv>
+        <BtnDiv padding="20px" width="231px" height="64px">
+            <BtnStyle padding="20px" color="#42366D">
+                <BtnText textHover weight="500"><div style={{paddingRight:"10px"}}>Next Question</div><img src={process.env.PUBLIC_URL + "./fi_pocket.svg" } alt="arrow"/></BtnText>    
+            </BtnStyle>
+        </BtnDiv>
     )
 }
 

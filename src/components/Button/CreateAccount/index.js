@@ -1,13 +1,13 @@
 import React from 'react';
-import {CreateBtnStyle, CreateDiv, CreateTextDiv} from './style'
+import {BtnStyle, BtnDiv, BtnText} from '../style';
 
-const CreateButton =({color})=> {
+const CreateButton =()=> {
     return (
-        <CreateDiv>
-            <CreateBtnStyle color={color}>
-                <CreateTextDiv>Create Account</CreateTextDiv>    
-            </CreateBtnStyle>
-        </CreateDiv>
+        <BtnDiv padding="20px" width="200px" height="54px">
+            <BtnStyle padding="15px" color="#5332A6" hovercolor="#3908E4">
+                <BtnText weight="600"><div style={{paddingRight:"10px"}}>Create Account</div></BtnText>    
+            </BtnStyle>
+        </BtnDiv>
     )
 }
 

@@ -1,13 +1,13 @@
 import React from 'react';
-import {SignBtnStyle, SignDiv, SignTextDiv} from './style'
+import {BtnStyle, BtnDiv, BtnText} from '../style';
 
-const SignUpButton =({color})=> {
+const SignUpButton =()=> {
     return (
-        <SignDiv>
-            <SignBtnStyle color={color}>
-                <SignTextDiv><div style={{paddingRight:"10px"}}>Sign Up</div><img src={process.env.PUBLIC_URL + "./fi_pocket.svg"} alt="arrow"/></SignTextDiv>    
-            </SignBtnStyle>
-        </SignDiv>
+        <BtnDiv padding="20px" width="195px" height="64px">
+            <BtnStyle padding="20px 40px" color="#5332A6" hovercolor="#3908E4">
+                <BtnText weight="500"><div style={{paddingRight:"10px"}}>Sign Up</div><img src={process.env.PUBLIC_URL + "./fi_pocket.svg"} alt="arrow"/></BtnText>    
+            </BtnStyle>
+        </BtnDiv>
     )
 }
 
