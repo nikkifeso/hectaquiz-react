@@ -8,6 +8,7 @@ export const Inputstyle = styled.input`
     padding-left: 15px;
     width: 100%;
     height: 100%;
+    /* flex: 1; */
     /* left: 60px;
     top: 285px; */
 

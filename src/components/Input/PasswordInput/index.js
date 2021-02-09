@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Inputstyle, InputDiv } from '../style';
-import { EyeStyle} from './style';
+import {Button} from './style';
+import {BsEyeSlash, BsEye} from 'react-icons/bs'
 
 
 const Password =({text})=>{
@@ -10,7 +11,10 @@ const Password =({text})=>{
     }
     return (
         <InputDiv>
-            <Inputstyle  type={visible ? "text":"password"} placeholder ={text} /><EyeStyle size={20} onClick={handleClick}/>
+            <Inputstyle  type={visible ? "text":"password"} placeholder ={text} />
+            <Button onClick={handleClick}>
+                {visible ? <BsEye size={24}/>:<BsEyeSlash size={24}/>}       
+            </Button>
         </InputDiv>
     )
 }
