@@ -3,9 +3,9 @@ import {BtnStyle, BtnDiv, BtnText} from '../style';
 
 const CreateButton =()=> {
     return (
-        <BtnDiv padding="20px" width="200px" height="54px">
+        <BtnDiv width="200px" height="54px" style={{paddingRight:"60px", marginTop:"32px"}}>
             <BtnStyle padding="15px" color="#5332A6" hovercolor="#3908E4">
-                <BtnText weight="600"><div style={{paddingRight:"10px"}}>Create Account</div></BtnText>    
+                <BtnText weight="600"><div>Create Account</div></BtnText>    
             </BtnStyle>
         </BtnDiv>
     )

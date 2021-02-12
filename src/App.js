@@ -10,11 +10,24 @@ import Email from './components/Input/EmailInput';
 import Password from './components/Input/PasswordInput';
 import Username from './components/Input/UsernameInput';
 import {GlobalStyle} from './components/GlobalStyle/style';
+import LandingNavbar from './components/Navbar/LandingNavbar';
+import LoginNavbar from './components/Navbar/LoginNavbar';
+import QuestionsNavbar from './components/Navbar/QuestionsNavbar';
+import Logo from './components/Navbar/LogoComp';
+import Category from './components/Category/CategoryComponent';
+import CategoryCard from './components/Category/CategoryRectangle';
 
 function App() {
   return (
-    <div className="App" style={{display: 'flex', flexDirection: 'column'}}>
+    <div className="App">
     <GlobalStyle/>
+    {/* <Category category="General Knowledge"/> */}
+    <QuestionsNavbar backgroundColor="#FFFDF8"></QuestionsNavbar>
+    <CategoryCard/>
+      {/* <Logo></Logo>
+      <LandingNavbar></LandingNavbar> */}
+      {/* <LoginNavbar></LoginNavbar> */}
+      {/* <QuestionsNavbar></QuestionsNavbar> */}
         {/* <div> <TakeButton/></div> */}
         {/* <div> <CreateButton/></div> */}
         {/* <div> <LoginButton/></div> */}
@@ -23,8 +36,9 @@ function App() {
         <div> <NextButton/></div>
         <div> <PreviousButton/></div> */}
         {/* <Email/> */}
-        <Password text="Confirm Password"/>
-        <Username text="Confirm Password"/>
+        {/* <Password text="Confirm Password"/>
+        <Username text="Confirm Password"/> */}
+        
     </div>
   );
 }
