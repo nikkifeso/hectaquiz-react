@@ -16,14 +16,16 @@ import QuestionsNavbar from './components/Navbar/QuestionsNavbar';
 import Logo from './components/Navbar/LogoComp';
 import Category from './components/Category/CategoryComponent';
 import CategoryCard from './components/Category/CategoryRectangle';
+import Dropdown from './components/MenuDropdown';
+import FinishedCard from './components/FinishedCard';
 
 function App() {
   return (
     <div className="App">
     <GlobalStyle/>
     {/* <Category category="General Knowledge"/> */}
-    <QuestionsNavbar backgroundColor="#FFFDF8"></QuestionsNavbar>
-    <CategoryCard/>
+    {/* <QuestionsNavbar backgroundColor="#FFFDF8"></QuestionsNavbar>
+    <CategoryCard/> */}
       {/* <Logo></Logo>
       <LandingNavbar></LandingNavbar> */}
       {/* <LoginNavbar></LoginNavbar> */}
@@ -38,6 +40,8 @@ function App() {
         {/* <Email/> */}
         {/* <Password text="Confirm Password"/>
         <Username text="Confirm Password"/> */}
+        <FinishedCard/>
+        
         
     </div>
   );

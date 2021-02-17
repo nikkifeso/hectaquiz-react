@@ -5,10 +5,12 @@ export const BtnStyle = styled.button`
     padding: ${props => props.padding};
     border: none;
     border-radius: 5px;
+    box-shadow: 0px 17px 70px rgba(49, 43, 57, 0.35);
     width: 100%;
     height: 100%;  
     :hover{
-        background-color: ${props => props.hovercolor}
+        background-color: ${props => props.hovercolor};
+        cursor: pointer;
     } 
 `
 export const BtnDiv = styled.div`

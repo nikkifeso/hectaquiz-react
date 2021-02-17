@@ -14,15 +14,15 @@ export const CategoryDiv = styled.div`
     display: flex;
     width: 433px;
     height: 77px;
-    border: 1.5px solid #f5f5f5;
+    border: 1px solid #f5f5f5;
     border-radius: 5px;
-    box-shadow: 0 0 0 1.5px #f5f5f5;
+    box-shadow: 0 0 0 1px #f5f5f5;
     color: #312B39;
     margin-left: 50px;
     margin-bottom: 15px;
 
     &:hover{
-        border: 1.5px solid #42366D;   
+        border: 1px solid #42366D;   
         ${IconDiv}{
             background-color: #42366D;   
             color: #ffffff;
