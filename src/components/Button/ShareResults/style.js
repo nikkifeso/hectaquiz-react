@@ -10,9 +10,11 @@ export const BtnStyle = styled.button`
     display: flex;
     flex-direction: row;
     margin-top: 30px;
+    background-color: #ffffff;
 
     :hover{
         cursor: pointer;
+        background-color: #FFFDF8;
     }
 `
 
