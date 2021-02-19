@@ -9,7 +9,7 @@ export const BtnStyle = styled.button`
     border-radius: 5px;
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 10px;
     background-color: #ffffff;
 
     :hover{

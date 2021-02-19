@@ -44,6 +44,7 @@ export const ImgDiv = styled.div`
     width: 60px;
     height: 60px;
     margin: 0 auto;
+    margin-top: 30px;
 `
 export const Text = styled.span`  
     height: 48px;
@@ -68,4 +69,17 @@ export const SmallText = styled.div`
     color: #000000;
     margin: 0 auto;
     margin-top: 30px;
+`
+export const TopText = styled.span`
+    width: 61px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+    margin-top: 25px;
+    margin-left: 27px;
 `
