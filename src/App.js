@@ -16,28 +16,36 @@ import QuestionsNavbar from './components/Navbar/QuestionsNavbar';
 import Logo from './components/Navbar/LogoComp';
 import Category from './components/Category/CategoryComponent';
 import CategoryCard from './components/Category/CategoryRectangle';
+import Dropdown from './components/MenuDropdown';
+import FinishedCard from './components/FinishedCard';
+import HistoryCard from './components/QuizHistoryCard'
+
 
 function App() {
   return (
     <div className="App">
     <GlobalStyle/>
+    {/* <ProgressBar question="2"/> */}
     {/* <Category category="General Knowledge"/> */}
-    <QuestionsNavbar backgroundColor="#FFFDF8"></QuestionsNavbar>
-    <CategoryCard/>
+    {/* <QuestionsNavbar backgroundColor="#FFFDF8"></QuestionsNavbar>
+    <CategoryCard/> */}
       {/* <Logo></Logo>
       <LandingNavbar></LandingNavbar> */}
       {/* <LoginNavbar></LoginNavbar> */}
       {/* <QuestionsNavbar></QuestionsNavbar> */}
-        {/* <div> <TakeButton/></div> */}
-        {/* <div> <CreateButton/></div> */}
-        {/* <div> <LoginButton/></div> */}
-        {/* <div> <SignUpButton/></div>
+        {/* <div> <TakeButton/></div>
+        <div> <CreateButton/></div>
+        <div> <LoginButton/></div>
+        <div> <SignUpButton/></div>
         <div> <ProceedButton/></div>
-        <div> <NextButton/></div>
+        <div> <NextButton text="Next Challenge"/></div>
         <div> <PreviousButton/></div> */}
         {/* <Email/> */}
         {/* <Password text="Confirm Password"/>
         <Username text="Confirm Password"/> */}
+        {/* <FinishedCard/> */}
+        <HistoryCard/>
+        
         
     </div>
   );
