@@ -18,7 +18,8 @@ import Category from './components/Category/CategoryComponent';
 import CategoryCard from './components/Category/CategoryRectangle';
 import Dropdown from './components/MenuDropdown';
 import FinishedCard from './components/FinishedCard';
-import HistoryCard from './components/QuizHistoryCard'
+import HistoryCard from './components/QuizHistoryCard';
+import QuestionsCard from './components/QuestionsCard';
 
 
 function App() {
@@ -44,8 +45,8 @@ function App() {
         {/* <Password text="Confirm Password"/>
         <Username text="Confirm Password"/> */}
         {/* <FinishedCard/> */}
-        <HistoryCard/>
-        
+        {/* <HistoryCard/> */}
+        <QuestionsCard/>
         
     </div>
   );

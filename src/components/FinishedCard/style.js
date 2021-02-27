@@ -71,7 +71,7 @@ export const SmallText = styled.div`
     margin-top: 30px;
 `
 export const TopText = styled.span`
-    width: 61px;
+    /* width: 61px; */
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;

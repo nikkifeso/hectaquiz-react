@@ -6,7 +6,6 @@ import {CardDiv,
         TableRow, 
         TableData, 
         TextStyle, 
-        ScoreStyle, 
         Divider} from './style';
 import NextButton from '../Button/Next';
 import {ButtonDiv} from './style'
