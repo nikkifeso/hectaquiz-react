@@ -3,54 +3,36 @@ import {ContainerDiv, QuestionSpan} from './style';
 import ProgressBar from '../ProgressBar';
 import {TopText}from '../FinishedCard/style';
 import NextButton from '../Button/Next';
-import {Label, AnswerDiv, CheckBorder, CheckIndicator} from '../Checkbox/style'
+import PreviousButton from '../Button/Previous';
+import FinishedButton from '../Button/Finished';
+import CheckBox from '../Checkbox';
 
-const QuestionsCard =()=>{
-    const [checked, setChecked] = useState("");
-    const handleFormSubmit =(event)=>{
-        event.preventDefault()
-    }
-    
+const QuestionsCard =()=>{ 
+    const question = "6"  
     return (
         <ContainerDiv>
-            <TopText>Question 1</TopText>
-            <ProgressBar question="1"/>  
+            <TopText>Question {question}</TopText>
+            <ProgressBar question={question}/>  
             <QuestionSpan> Who is your President?</QuestionSpan>  
-            <form onSubmit={handleFormSubmit}>
-                <AnswerDiv>
-                    <Label>
-                            <CheckBorder type="radio"
-                                name="options"
-                                value="Fk Abudu"
-                                onChange={(e)=>{setChecked(e.target.value)}}
-                            />
-                            Fk Abudu
-                    </Label>
-                </AnswerDiv>
-                <AnswerDiv >
-                    <Label>
-                            <CheckBorder type="radio"
-                                name="options"
-                                value="Boo Harry"
-                                onChange={(e)=>{setChecked(e.target.value)}}
-                            />
-                            Boo Harry
-                    </Label>
-                </AnswerDiv>
-                <AnswerDiv>
-                    <Label>
-                            <CheckBorder type="radio"
-                                name="options"
-                                value="Speed Darlington"
-                                onChange={(e)=>{setChecked(e.target.value)}}
-                            />
-                            Speed Darlington
-                    </Label>
-                </AnswerDiv>
-                <div style={{margin: "40px 55px 100px 235px"}}>
-                <NextButton type="submit" text="Next Question"/>
-                </div>       
-            </form>
+            <CheckBox label="mr A"></CheckBox>
+            <CheckBox label="mr B"></CheckBox>
+            <CheckBox label="mr C"></CheckBox>
+            
+            {
+                question === "7" ? <div style={{margin:"40px 0px 132px 30px" , display:"flex"}}>
+                    <PreviousButton/>
+                    <FinishedButton text="Finished" style={{marginLeft:"1px"}}/>
+                </div>
+                : question > "1" ? <div style={{margin:"40px 0px 132px 0px", display:"flex", justifyContent: "space-between"}}>
+                    <PreviousButton/>
+                    <NextButton text="Next Question"/>
+                </div>
+                :
+                <div style={{margin:"40px 0px 132px 256px"}}>
+                    <NextButton text="Next Question"/>
+                </div>
+            }
+            
         </ContainerDiv>
     )
 }

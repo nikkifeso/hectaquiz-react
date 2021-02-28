@@ -1,16 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {AnswerDiv, CheckBorder, CheckIndicator, Label} from './style';
 
-const CheckBox =({checked, onChange, label})=> {
+const CheckBox =({label})=> {
+    const [isActive, setActive] = useState(false);
+    const handleToggle = () => {
+        setActive(!isActive);
+      };
     return (
         
-         <AnswerDiv onClick={()=> onChange(!checked)}>
+         <AnswerDiv className={isActive? "active": null} 
+         onClick={handleToggle}
+         tabindex="0">
              <CheckBorder>
              {
-                checked === true ? <CheckIndicator/> : null
+                isActive === true ? <CheckIndicator size={50}/> : null
             }
              </CheckBorder>  
-             <Label>{label}</Label>   
+             <Label>{label}</Label> 
+             
         </AnswerDiv>
     )
 }

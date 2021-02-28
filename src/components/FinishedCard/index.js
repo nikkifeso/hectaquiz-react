@@ -18,7 +18,7 @@ const FinishedCard =({category})=>{
             <ScoreCicle>
                 <ScoreText>10/10</ScoreText>
             </ScoreCicle>
-            <ButtonDiv>
+            <ButtonDiv style={{paddingLeft:"17px"}}>
                 <NextButton text="New Challenge"></NextButton>
             </ButtonDiv>
             <ButtonDiv>

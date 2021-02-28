@@ -82,7 +82,7 @@ const HistoryCard =()=> {
                     </tbody>
                 </Table>     
             </TableDiv>
-            <ButtonDiv>
+            <ButtonDiv style={{paddingLeft:"17px"}}>
             <NextButton text="New Challenge"></NextButton>
             </ButtonDiv>   
         </CardDiv>

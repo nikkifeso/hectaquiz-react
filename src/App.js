@@ -39,13 +39,14 @@ function App() {
         <div> <LoginButton/></div>
         <div> <SignUpButton/></div>
         <div> <ProceedButton/></div>
-        <div> <NextButton text="Next Challenge"/></div>
-        <div> <PreviousButton/></div> */}
+        <div> <NextButton text="Next Challenge"/></div>*/}
+        {/* <div> <PreviousButton/></div>  */}
         {/* <Email/> */}
         {/* <Password text="Confirm Password"/>
         <Username text="Confirm Password"/> */}
-        {/* <FinishedCard/> */}
-        {/* <HistoryCard/> */}
+        <CategoryCard/>
+        <FinishedCard/>
+        <HistoryCard/>
         <QuestionsCard/>
         
     </div>
