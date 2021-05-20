@@ -18,7 +18,11 @@ import Category from './components/Category/CategoryComponent';
 import CategoryCard from './components/Category/CategoryRectangle';
 import Dropdown from './components/MenuDropdown';
 import FinishedCard from './components/FinishedCard';
-import HistoryCard from './components/QuizHistoryCard'
+import HistoryCard from './components/QuizHistoryCard';
+import QuestionsCard from './components/QuestionsCard';
+
+import LandingPage from './pages/Landing';
+import LoginPage from './pages/Login';
 
 
 function App() {
@@ -38,14 +42,20 @@ function App() {
         <div> <LoginButton/></div>
         <div> <SignUpButton/></div>
         <div> <ProceedButton/></div>
-        <div> <NextButton text="Next Challenge"/></div>
-        <div> <PreviousButton/></div> */}
+        <div> <NextButton text="Next Challenge"/></div>*/}
+        {/* <div> <PreviousButton/></div>  */}
         {/* <Email/> */}
         {/* <Password text="Confirm Password"/>
         <Username text="Confirm Password"/> */}
-        {/* <FinishedCard/> */}
+        {/* <CategoryCard/>
+        <FinishedCard/>
         <HistoryCard/>
-        
+        <QuestionsCard/> */}
+
+    { /*Pages*/ }
+    {/* <LandingPage/> */}
+
+    <LoginPage/>
         
     </div>
   );

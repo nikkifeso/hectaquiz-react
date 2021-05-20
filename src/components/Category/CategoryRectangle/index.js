@@ -1,7 +1,6 @@
 import React from 'react';
 import {CardDiv, TopText} from './style';
 import Category from '../CategoryComponent';
-// import {FaVolleyballBall} from 'react-icons/fa'
 
 const CategoryCard =()=> {
     return (

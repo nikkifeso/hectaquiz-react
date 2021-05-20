@@ -2,10 +2,8 @@ import styled from 'styled-components';
 
 export const CardDiv = styled.div`
     height: 800px;
-    /* width: px; */
-    flex: 38%;
-    display: flex;
-    flex-direction: column;
+    width: 538px;
+    display: inline-block;
     box-shadow:  10.7653px 10.7653px 21.5307px rgba(107, 127, 153, 0.02), -12.3265px 12.3265px 24.6531px rgba(107, 127, 153, 0.02);
     border-radius: 5px;
     margin-top: 30px;

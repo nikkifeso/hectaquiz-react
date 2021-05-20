@@ -20,7 +20,6 @@ export const CategoryDiv = styled.div`
     color: #312B39;
     margin-left: 50px;
     margin-bottom: 15px;
-
     &:hover{
         border: 1px solid #42366D;   
         ${IconDiv}{

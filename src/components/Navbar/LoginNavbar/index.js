@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavbarStyle, LoginText, LoginDiv } from '../style';
+import { NavbarStyle} from '../style';
 import Logo from '../LogoComp';
 
 const LoginNavbar =()=> {
