@@ -21,6 +21,9 @@ import FinishedCard from './components/FinishedCard';
 import HistoryCard from './components/QuizHistoryCard';
 import QuestionsCard from './components/QuestionsCard';
 
+import LandingPage from './pages/Landing';
+import LoginPage from './pages/Login';
+
 
 function App() {
   return (
@@ -44,10 +47,15 @@ function App() {
         {/* <Email/> */}
         {/* <Password text="Confirm Password"/>
         <Username text="Confirm Password"/> */}
-        <CategoryCard/>
+        {/* <CategoryCard/>
         <FinishedCard/>
         <HistoryCard/>
-        <QuestionsCard/>
+        <QuestionsCard/> */}
+
+    { /*Pages*/ }
+    {/* <LandingPage/> */}
+
+    <LoginPage/>
         
     </div>
   );

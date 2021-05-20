@@ -8,7 +8,7 @@ import FinishedButton from '../Button/Finished';
 import CheckBox from '../Checkbox';
 
 const QuestionsCard =()=>{ 
-    const question = "6"  
+    const question = "5"  
     return (
         <ContainerDiv>
             <TopText>Question {question}</TopText>
