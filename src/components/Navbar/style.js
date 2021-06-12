@@ -47,8 +47,8 @@ export const LoginDiv = styled.div`
 export const AvatarDiv = styled.div`
     display: flex;
     height: 52px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 11px;
+    /* margin-bottom: 25px; */
     margin-left: 61%;
 `
 export const UserText = styled.span`

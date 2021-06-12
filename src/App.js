@@ -25,6 +25,10 @@ import LandingPage from './pages/Landing';
 import LoginPage from './pages/Login';
 import SignUpPage from './pages/SignUp'
 import SignUpSuccess from './pages/SignUpSuccess';
+import Dashboard from './pages/Dashboard';
+import QuestionBoard from './pages/Questions';
+import FinishedPage from './pages/Finished';
+import HistoryPage from './pages/History';
 
 
 function App() {
@@ -55,10 +59,14 @@ function App() {
         <QuestionsCard/> */}
 
     { /*Pages*/ }
-    {/* <LandingPage/> */}
-
+    {/* <LandingPage/>  */}
+    {/* <LoginPage/> */}
     {/* <SignUpPage/> */}
     <SignUpSuccess/>
+    {/* <Dashboard/> */}
+    {/* <QuestionBoard/> */}
+    {/* <FinishedPage/> */}
+    {/* <HistoryPage/> */}
         
     </div>
   );
