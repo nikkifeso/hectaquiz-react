@@ -23,6 +23,8 @@ import QuestionsCard from './components/QuestionsCard';
 
 import LandingPage from './pages/Landing';
 import LoginPage from './pages/Login';
+import SignUpPage from './pages/SignUp'
+import SignUpSuccess from './pages/SignUpSuccess';
 
 
 function App() {
@@ -55,7 +57,8 @@ function App() {
     { /*Pages*/ }
     {/* <LandingPage/> */}
 
-    <LoginPage/>
+    {/* <SignUpPage/> */}
+    <SignUpSuccess/>
         
     </div>
   );
