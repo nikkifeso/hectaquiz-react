@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const ContainerDiv = styled.div`
     width: 542px;
-    /* height: 642px; */
     display: inline-block;
     background: #FFFFFF;
     box-shadow: 10.7653px 10.7653px 21.5307px rgba(107, 127, 153, 0.02), -12.3265px 12.3265px 24.6531px rgba(107, 127, 153, 0.02);
@@ -10,6 +9,8 @@ export const ContainerDiv = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 71px;
+    margin-bottom: 151px;
 `
 
 export const QuestionSpan = styled.span`

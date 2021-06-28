@@ -9,6 +9,8 @@ export const CardDiv = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 71px;
+    margin-bottom: 151px;
 `
 
 export const ScoreCicle = styled.div`
