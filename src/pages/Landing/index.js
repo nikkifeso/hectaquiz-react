@@ -1,6 +1,7 @@
 import LandingNavbar from '../../components/Navbar/LandingNavbar'
 import {BackgroundStyle, BrainDesign, BoldText, LeftDiv, SmallText, ButtonDiv} from './style'
 import TakeButton from '../../components/Button/TakeChallenge'
+import {StyledLink} from '../../components/style';
 
 
 const LandingPage=()=>{
@@ -16,7 +17,10 @@ const LandingPage=()=>{
                 
             </LeftDiv>
             <ButtonDiv>
+            <StyledLink to='/login'>
                 <TakeButton />
+            </StyledLink>
+                
             </ButtonDiv>
             
             

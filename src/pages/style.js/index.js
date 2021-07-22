@@ -1,6 +1,6 @@
-import { StyledLink } from '../../components/style';
-import LoginNavbar from '../../components/Navbar/LoginNavbar';
-import ProceedButton from '../../components/Button/Proceed';
+import { Link } from 'react-router-dom';
+import LoginNavbar from '../Navbar/LoginNavbar';
+import ProceedButton from '../Button/Proceed';
 import {BackgroundStyle,
         RightDiv, 
         LeftDiv,
@@ -17,9 +17,7 @@ import {BackgroundStyle,
 const SignUpSuccess =()=>{
     return (
         <>
-            <StyledLink to='/'>
-                <LoginNavbar/>
-           </StyledLink>
+            <LoginNavbar/>
             <div style={{display:"flex"}}>
             <LeftDiv>
             <TextIconDiv>
@@ -31,14 +29,12 @@ const SignUpSuccess =()=>{
                 
                
                 <SmallText style={{marginTop:"31px"}}>Your account has been created successfully.
-                            Please login to your account.
+                            Please Login to your account.
                 </SmallText>
 
                 
                 <ButtonDiv>
-                    <StyledLink to='/login'>
-                        <ProceedButton/>
-                    </StyledLink>           
+                    <ProceedButton/>
                 </ButtonDiv>
 
             </LeftDiv>

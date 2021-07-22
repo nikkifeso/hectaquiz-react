@@ -9,6 +9,7 @@ import {CardDiv,
         Divider} from './style';
 import NextButton from '../Button/Next';
 import {ButtonDiv} from './style'
+import {StyledLink} from '../style';
 
 const HistoryCard =()=> {
     const Data = [
@@ -82,9 +83,14 @@ const HistoryCard =()=> {
                     </tbody>
                 </Table>     
             </TableDiv>
-            <ButtonDiv style={{paddingLeft:"17px"}}>
-            <NextButton text="New Challenge"></NextButton>
-            </ButtonDiv>   
+            
+                <ButtonDiv style={{paddingLeft:"17px"}}>
+                    <StyledLink to='/dashboard'>
+                        <NextButton text="New Challenge"></NextButton>
+                    </StyledLink>
+                </ButtonDiv>  
+           
+             
         </CardDiv>
     )
 }

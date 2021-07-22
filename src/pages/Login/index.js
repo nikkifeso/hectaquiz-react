@@ -1,3 +1,4 @@
+import { StyledLink } from '../../components/style';
 import LoginNavbar from '../../components/Navbar/LoginNavbar';
 import Email from '../../components/Input/EmailInput';
 import Password from '../../components/Input/PasswordInput';
@@ -22,7 +23,10 @@ import {BackgroundStyle,
 const LoginPage =()=>{
     return(
         <>
-           <LoginNavbar/>
+           <StyledLink to='/'>
+                <LoginNavbar/>
+           </StyledLink>
+           
            <div style={{display:"flex"}}>
             <LeftDiv>
                 <LoginText >Login to your account</LoginText>
@@ -37,7 +41,10 @@ const LoginPage =()=>{
                 </RemCheckDiv>
                 <ButtonDiv>
                     <LoginButton/>
-                    <CreateAccount> Create an Account</CreateAccount>
+                    <StyledLink to='/sign-up'>
+                        <CreateAccount> Create an Account</CreateAccount>
+                    </StyledLink>
+                    
                 </ButtonDiv>
 
                 <PassThroughDiv>

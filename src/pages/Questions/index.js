@@ -3,7 +3,6 @@ import {BackImg, Copyright} from '../Dashboard/style';
 import QuestionsCard  from '../../components/QuestionsCard';
 
 
-
 const QuestionBoard =()=>{
     return(
         <>

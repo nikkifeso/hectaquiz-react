@@ -1,3 +1,4 @@
+import { StyledLink } from '../../components/style';
 import LoginNavbar from '../../components/Navbar/LoginNavbar';
 import Email from '../../components/Input/EmailInput';
 import Password from '../../components/Input/PasswordInput';
@@ -19,7 +20,9 @@ import {BackgroundStyle,
 const SignUpPage =()=>{
     return(
         <>
-           <LoginNavbar/>
+           <StyledLink to='/'>
+                <LoginNavbar/>
+           </StyledLink>
            <div style={{display:"flex"}}>
             <LeftDiv>
                 <SignUpText>Create an account</SignUpText>
@@ -32,7 +35,9 @@ const SignUpPage =()=>{
                 
                 <ButtonDiv>
                     <SignUpButton/>
-                    <LogIn> Have an account?&nbsp;<strong>Login</strong></LogIn>
+                    <LogIn> Have an account?&nbsp;
+                    <StyledLink to='/login'><strong>Login</strong></StyledLink>
+                    </LogIn>
                 </ButtonDiv>
 
                 <PassThroughDiv>
@@ -50,9 +55,7 @@ const SignUpPage =()=>{
                     <BackgroundStyle src={process.env.PUBLIC_URL + './login_bck.svg'} alt='background_image'/> 
                     <BrainMist src={process.env.PUBLIC_URL + './book_mist.svg'} alt='brain_mist_image'/>
             </RightDiv> 
-           </div>
-              
-           
+           </div>       
         </>
         
     )
