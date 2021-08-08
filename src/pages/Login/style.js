@@ -42,7 +42,7 @@ export const LoginText = styled.span`
     color: #42366D;
 `
 
-export const SmallText = styled.span`
+export const SmallText = styled.label`
     /* width: 117px; */
     /* height: 20px; */
     /* margin-top: 31px; */

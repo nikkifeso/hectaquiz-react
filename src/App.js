@@ -1,26 +1,5 @@
 // import './App.css';
-import TakeButton from './components/Button/TakeChallenge';
-import CreateButton from './components/Button/CreateAccount';
-import LoginButton from './components/Button/Login';
-import SignUpButton from './components/Button/SignUp';
-import ProceedButton from './components/Button/Proceed';
-import NextButton from './components/Button/Next';
-import PreviousButton from './components/Button/Previous';
-import Email from './components/Input/EmailInput';
-import Password from './components/Input/PasswordInput';
-import Username from './components/Input/UsernameInput';
 import {GlobalStyle} from './components/GlobalStyle/style';
-import LandingNavbar from './components/Navbar/LandingNavbar';
-import LoginNavbar from './components/Navbar/LoginNavbar';
-import QuestionsNavbar from './components/Navbar/QuestionsNavbar';
-import Logo from './components/Navbar/LogoComp';
-import Category from './components/Category/CategoryComponent';
-import CategoryCard from './components/Category/CategoryRectangle';
-import Dropdown from './components/MenuDropdown';
-import FinishedCard from './components/FinishedCard';
-import HistoryCard from './components/QuizHistoryCard';
-import QuestionsCard from './components/QuestionsCard';
-
 import LandingPage from './pages/Landing';
 import LoginPage from './pages/Login';
 import SignUpPage from './pages/SignUp'
