@@ -4,7 +4,7 @@ import { Inputstyle, InputDiv} from '../style'
 const Email =()=>{
     return (
         <InputDiv>
-            <Inputstyle  type="email" placeholder = "Enter your Email Address"/>
+            <Inputstyle name="email" id="email" type="email" placeholder = "Enter your Email Address"/>
         </InputDiv>
     )
 }

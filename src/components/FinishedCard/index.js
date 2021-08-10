@@ -3,6 +3,8 @@ import { CardDiv, ScoreCicle, ScoreText, ButtonDiv, ImgDiv, Text, SmallText, Top
 import NextButton from '../Button/Next';
 import ShareResults from '../Button/ShareResults';
 import ProgressBar from '../ProgressBar';
+import {StyledLink} from '../style';
+
 
 const FinishedCard =({category})=>{
     return (
@@ -19,7 +21,10 @@ const FinishedCard =({category})=>{
                 <ScoreText>10/10</ScoreText>
             </ScoreCicle>
             <ButtonDiv style={{paddingLeft:"17px"}}>
-                <NextButton text="New Challenge"></NextButton>
+                <StyledLink to='/dashboard'>
+                    <NextButton text="New Challenge"></NextButton>
+                </StyledLink>
+                
             </ButtonDiv>
             <ButtonDiv>
                 <ShareResults/>

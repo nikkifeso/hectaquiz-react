@@ -3,7 +3,6 @@ import {BackImg, Copyright} from '../Dashboard/style';
 import FinishedCard from '../../components/FinishedCard';
 
 
-
 const FinishedPage =()=>{
     return(
         <>

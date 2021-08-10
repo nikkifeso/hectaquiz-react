@@ -1,3 +1,5 @@
+import { useForm } from 'react-hook-form';
+import { StyledLink } from '../../components/style';
 import LoginNavbar from '../../components/Navbar/LoginNavbar';
 import Email from '../../components/Input/EmailInput';
 import Password from '../../components/Input/PasswordInput';
@@ -20,14 +22,24 @@ import {BackgroundStyle,
 
 
 const LoginPage =()=>{
+    const { register, handleSubmit, errors } = useForm();
+    const onSubmit = (data)=>{
+        console.log(data)
+    }
+    
     return(
         <>
-           <LoginNavbar/>
+           <StyledLink to='/'>
+                <LoginNavbar/>
+           </StyledLink>
+           
            <div style={{display:"flex"}}>
+           
             <LeftDiv>
-                <LoginText >Login to your account</LoginText>
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <LoginText>Login to your account</LoginText>
                 <SmallText style={{marginTop:"31px"}}>Email Address</SmallText>
-                <Email></Email>
+                <Email/>
                 <SmallText style={{marginTop:"5px"}}>Password</SmallText>
                 <Password text='Enter Your Password'></Password>
                 <RemCheckDiv>
@@ -37,8 +49,12 @@ const LoginPage =()=>{
                 </RemCheckDiv>
                 <ButtonDiv>
                     <LoginButton/>
-                    <CreateAccount> Create an Account</CreateAccount>
+                    <StyledLink to='/sign-up'>
+                        <CreateAccount> Create an Account</CreateAccount>
+                    </StyledLink>
+                    
                 </ButtonDiv>
+                </form>
 
                 <PassThroughDiv>
                     <PassThrough src={process.env.PUBLIC_URL + './Rectangle 6.svg'} alt='pass_through'/>

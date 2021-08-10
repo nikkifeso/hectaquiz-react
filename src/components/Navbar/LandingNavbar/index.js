@@ -1,18 +1,35 @@
 import React from 'react';
 import { NavbarStyle, LoginText, LoginDiv } from '../style';
 import Logo from '../LogoComp';
-import CreateAccount from '../../Button/CreateAccount'
+import CreateAccount from '../../Button/CreateAccount';
+import {StyledLink} from '../../style';
+
 
 const LandingNavbar =()=> {
     return(
            <NavbarStyle>
-               <Logo/>
+               <div>
+                    <StyledLink to='/'>
+                        <Logo/>
+                    </StyledLink>
+                </div>
+                   
                <LoginDiv>
-                <img src={process.env.PUBLIC_URL + './lock.svg'} alt="logo" style={{paddingBottom:"31px"}}/>
-                <LoginText>Login</LoginText>
+                    <StyledLink to='/login'>
+                        <img src={process.env.PUBLIC_URL + './lock.svg'} alt="logo" style={{paddingBottom:"31px"}}/>
+                    </StyledLink>
+                
+                <LoginText>
+                    <StyledLink to='/login'>
+                        Login
+                    </StyledLink>
+                        
+                </LoginText>
                </LoginDiv>
                <div>
-                <CreateAccount/>
+                    <StyledLink to='/sign-up'>
+                            <CreateAccount/>
+                    </StyledLink>         
                </div>
            </NavbarStyle> 
     )

@@ -42,7 +42,7 @@ export const SignUpText = styled.span`
     color: #42366D;
 `
 
-export const SmallText = styled.span`
+export const SmallText = styled.label`
     
     font-family: Montserrat;
     font-style: normal;
