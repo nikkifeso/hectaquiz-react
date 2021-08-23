@@ -1,4 +1,5 @@
-import {useState} from 'react';
+import {useState,  useEffect} from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import {Formik} from 'formik';
 import {BsEyeSlash, BsEye} from 'react-icons/bs'
 import { StyledLink } from '../../components/style';
@@ -16,12 +17,28 @@ import {BackgroundStyle,
         PassThroughDiv,
         PassThroughText,
         Social} from './style'
-import {InputDiv, Inputstyle, Text} from '../../components/Input/style';
-import {Button} from '../../components/Input/PasswordInput/style'
+import { InputDiv, Inputstyle, Text } from '../../components/Input/style';
+import { Button } from '../../components/Input/PasswordInput/style';
+import { signUpAction } from '../../redux/signUp/signupAction';
+import { toast, ToastContainer } from 'react-toastify';
 
 
 const SignUpPage =()=>{
-    const [visible, setVisible] = useState(false)
+    const dispatch = useDispatch();
+    const [error, setError] = useState("");
+    const [visible, setVisible] = useState(false);
+    const [submit, setSubmit] = useState(false);
+    const {
+        signUpReducer: { signUpError, signUpSuccess, signUpData, signUpLoading},
+    } = useSelector((state => state))
+
+    useEffect(() => {
+        if(signUpError){
+            setError(signUpError)
+            toast.error(signUpError, {position: toast.POSITION.TOP_RIGHT})
+        }
+    }, [signUpSuccess, signUpError])
+
     const handleClick =(e)=>{
         e.preventDefault()
         setVisible(!visible)
@@ -37,10 +54,11 @@ const SignUpPage =()=>{
             <SignUpText>Create an Account</SignUpText>
             {/* FORMIK */}
             <Formik
-            initialValues={{ firstname:"", lastname:"", username:"", email: "", password: "", confirmedPassword: ""}}
+            initialValues={{ name: "", firstname:"", lastname:"", username:"", email: "", password: "", confirmedPassword: ""}}
             
             validate={values => {
                 let errors = {};
+                values.name = values.firstname + " " + values.lastname
                 // REGEX
                 let regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
                 // VALIDATION
@@ -75,9 +93,18 @@ const SignUpPage =()=>{
                 
                 return errors;
             }}
-            onSubmit={values => {
-                console.log(values);
-            }}
+            onSubmit={(values) =>{
+
+                dispatch(
+                    signUpAction({
+                        name: values.name,
+                        username: values.username, 
+                        email: values.email, 
+                        password: values.password
+                    })
+                );
+                setSubmit(true)
+            } }
             render={({
                 touched,
                 errors,
@@ -227,7 +254,8 @@ const SignUpPage =()=>{
                     <BackgroundStyle src={process.env.PUBLIC_URL + './login_bck.svg'} alt='background_image'/> 
                     <BrainMist src={process.env.PUBLIC_URL + './book_mist.svg'} alt='brain_mist_image'/>
             </RightDiv> 
-           </div>       
+           </div>  
+           {submit && <ToastContainer autoClose={2000} limit={1} />}     
         </>
         
     )
