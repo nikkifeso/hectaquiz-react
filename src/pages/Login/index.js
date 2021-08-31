@@ -1,12 +1,9 @@
-import { useForm } from 'react-hook-form';
 import { useState, useEffect } from 'react';
 import { StyledLink } from '../../components/style';
 import { useDispatch, useSelector } from 'react-redux';
 import {Formik} from 'formik';
 import {BsEyeSlash, BsEye} from 'react-icons/bs'
 import LoginNavbar from '../../components/Navbar/LoginNavbar';
-import Email from '../../components/Input/EmailInput';
-import Password from '../../components/Input/PasswordInput';
 import LoginButton from '../../components/Button/Login';
 import {BackgroundStyle,
         RightDiv, 
