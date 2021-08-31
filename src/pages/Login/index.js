@@ -46,7 +46,7 @@ const LoginPage =()=>{
             toast.error(logInError, {position: toast.POSITION.TOP_RIGHT})
         }
         
-    }, [logInError, logInSuccess])
+    }, [logInError, logInSuccess, history])
 
     const handleClick =(e)=>{
         e.preventDefault()
@@ -180,7 +180,8 @@ const LoginPage =()=>{
                     <BrainMist src={process.env.PUBLIC_URL + './book_mist.svg'} alt='brain_mist_image'/>
             </RightDiv> 
            </div>
-           {submit && <ToastContainer autoClose={2000} limit={1} />}    
+           {submit && <ToastContainer autoClose={2000} limit={1} />}  
+           {console.log(error,logInData,logInLoading)}  
         </>
         
     )
