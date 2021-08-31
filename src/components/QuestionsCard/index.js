@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {ContainerDiv, QuestionSpan} from './style';
 import ProgressBar from '../ProgressBar';
 import {TopText}from '../FinishedCard/style';

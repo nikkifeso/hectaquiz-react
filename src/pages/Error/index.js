@@ -1,5 +1,4 @@
 import React from 'react';
-import StyledLink from '../../components/style';
 
 
 const Error = () => {

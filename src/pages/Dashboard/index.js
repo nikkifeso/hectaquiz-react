@@ -1,7 +1,6 @@
 import QuestionsNavbar from '../../components/Navbar/QuestionsNavbar';
 import {BackImg, Copyright} from './style';
 import CategoryCard from '../../components/Category/CategoryRectangle';
-import StyledLink from '../../components/style';
 
 
 
