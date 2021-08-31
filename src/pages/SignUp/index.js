@@ -255,7 +255,8 @@ const SignUpPage =()=>{
                     <BrainMist src={process.env.PUBLIC_URL + './book_mist.svg'} alt='brain_mist_image'/>
             </RightDiv> 
            </div>  
-           {submit && <ToastContainer autoClose={2000} limit={1} />}     
+           {submit && <ToastContainer autoClose={2000} limit={1} />}   
+           {console.log(error,signUpData,signUpLoading)}   
         </>
         
     )
