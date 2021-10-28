@@ -1,6 +1,6 @@
 import React from 'react';
 import {BtnStyle, BtnDiv, BtnText} from '../style';
-import FiPocket from '../../SvgIcons/FiPocket';
+import {FiPocket} from '../../SvgIcons/FiPocket';
 
 const PreviousButton =()=> {
     return (

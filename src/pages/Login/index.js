@@ -5,6 +5,8 @@ import {Formik} from 'formik';
 import {BsEyeSlash, BsEye} from 'react-icons/bs'
 import LoginNavbar from '../../components/Navbar/LoginNavbar';
 import LoginButton from '../../components/Button/Login';
+import FacebookAuth from '../../components/FacebookLogin';
+import GoogleAuth from '../../components/GoogleLogin';
 import {BackgroundStyle,
         RightDiv, 
         LeftDiv,
@@ -173,6 +175,8 @@ const LoginPage =()=>{
                 <Social src={process.env.PUBLIC_URL + './google.svg'} alt='google'/>
                 <Social src={process.env.PUBLIC_URL + './facebook.svg'} alt='facebook'/>
                 <Social src={process.env.PUBLIC_URL + './twitter.svg'} alt='twitter'/>
+                <FacebookAuth/>
+                <GoogleAuth/>
 
             </LeftDiv>
             <RightDiv>

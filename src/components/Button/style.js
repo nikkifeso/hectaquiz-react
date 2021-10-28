@@ -36,6 +36,20 @@ export const BtnStyle = styled.button`
         cursor: pointer;
     }  
 `
+
+export const BtnTextSmall = styled.div`
+    position: static;
+    color: #ffffff;
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: ${props => props.weight};
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: flex-end;
+`
+
 export const BtnDiv = styled.div`
     display: flex;
     flex-direction: row;
@@ -43,4 +57,21 @@ export const BtnDiv = styled.div`
     padding: ${props => props.padding};
     width: ${props => props.width};
     height: ${props => props.height};
+
+    @media only screen and (max-width: 300px){
+        display: none;
+    }
+`
+
+export const BtnDivSmall = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: ${props => props.padding};
+    width: ${props => props.width};
+    height: ${props => props.height};
+
+    @media only screen and (min-width: 300px){
+        display: none;
+    }
 `
