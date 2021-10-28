@@ -1,11 +1,11 @@
 import React from 'react';
-import { Logotext, LogoDiv } from '../style';
+import {HamburgerDiv } from '../style';
 
 const Hamburger =()=> {
     return(
-           <LogoDiv>
+           <HamburgerDiv>
                <img src={process.env.PUBLIC_URL + './hamburger.svg'} alt="logo"/>
-           </LogoDiv>
+           </HamburgerDiv>
 
     )
 }

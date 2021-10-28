@@ -19,6 +19,9 @@ export const Logotext = styled.span`
     display: flex;
     align-items: flex-end;
     color: #42366D;
+    @media only screen and (max-width: 400px){
+        font-size: 18px;
+    }
 `
 
 export const LogoDiv = styled.div`
@@ -58,18 +61,28 @@ export const LoginDiv = styled.div`
     } */
 `
 export const HamburgerDiv = styled.div`
-    display: flex;
+    display: none;
     margin-left: 60px;
     margin-top: 39px;
+    margin-right: 13px;
     height: 40px;
-    @media only screen and (min-width: 1200px){
-        display: none;
+    @media only screen and (max-width: 1200px){
+        display: flex;
     }
 `
 
 export const AccountDiv = styled.div`
     @media only screen and (max-width: 1200px){
         display: none;
+    }
+`
+export const AccountDivHamBurger = styled.div`
+    margin-right: 60px;
+    @media only screen and (max-width: 1200px){
+        display: flex;
+    }
+    @media only screen and (max-width: 450px){
+        margin-right: 10px;
     }
 `
 

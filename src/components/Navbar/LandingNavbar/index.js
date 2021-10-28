@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavbarStyle, LoginText, LoginDiv, AccountDiv, RightNavDiv} from '../style';
+import { NavbarStyle, LoginText, LoginDiv, AccountDiv, RightNavDiv, AccountDivHamBurger} from '../style';
 import Logo from '../LogoComp';
 import Hamburger from '../LogoComp/hamburger_icon';
 import CreateAccount from '../../Button/CreateAccount';
@@ -30,9 +30,11 @@ const LandingNavbar =()=> {
                     <AccountDiv>
                             <StyledLink to='/sign-up'>
                                     <CreateAccount/>
-                            </StyledLink>
-                            <Hamburger/>       
+                            </StyledLink>      
                     </AccountDiv>
+                   <AccountDivHamBurger>
+                        <Hamburger/> 
+                   </AccountDivHamBurger>
                 </RightNavDiv>
                
            </NavbarStyle> 
