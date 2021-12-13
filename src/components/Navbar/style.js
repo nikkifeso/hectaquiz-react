@@ -5,6 +5,7 @@ export const NavbarStyle = styled.div`
     height: 90px;
     width: 100%;
     background-color: ${props => props.backgroundColor};
+    position: relative;
 `
 export const Logotext = styled.span`
     height: 24px;
@@ -18,6 +19,9 @@ export const Logotext = styled.span`
     display: flex;
     align-items: flex-end;
     color: #42366D;
+    @media only screen and (max-width: 400px){
+        font-size: 18px;
+    }
 `
 
 export const LogoDiv = styled.div`
@@ -25,7 +29,11 @@ export const LogoDiv = styled.div`
     margin-left: 60px;
     margin-top: 39px;
     height: 40px;
+    @media only screen and (max-width: 450px){
+        margin-left: 10px;
+    }
 `
+
 export const LoginText = styled.span`
     width: 59px;
     height: 24px;
@@ -42,8 +50,42 @@ export const LoginDiv = styled.div`
     height: 52px;
     margin-top: 47px;
     margin-right: 52px;
-    margin-left: 57%;
+    /* margin-left: 50%; */
+
+    @media only screen and (max-width: 1200px){
+        display: none;
+    }
+
+    /* @media only screen and (min-width: 1400px){
+        margin-left: 5%;
+    } */
 `
+export const HamburgerDiv = styled.div`
+    display: none;
+    margin-left: 60px;
+    margin-top: 39px;
+    margin-right: 13px;
+    height: 40px;
+    @media only screen and (max-width: 1200px){
+        display: flex;
+    }
+`
+
+export const AccountDiv = styled.div`
+    @media only screen and (max-width: 1200px){
+        display: none;
+    }
+`
+export const AccountDivHamBurger = styled.div`
+    margin-right: 60px;
+    @media only screen and (max-width: 1200px){
+        display: flex;
+    }
+    @media only screen and (max-width: 450px){
+        margin-right: 10px;
+    }
+`
+
 export const AvatarDiv = styled.div`
     display: flex;
     height: 52px;
@@ -72,4 +114,11 @@ export const DropdownBtn = styled.button`
     border: none;
     margin-top: 20px;
     margin-right: 70px;
+`
+export const RightNavDiv = styled.div`
+    display: flex;  
+    position: absolute;
+    top: 0px;
+    right:0; 
+    bottom: 0;
 `

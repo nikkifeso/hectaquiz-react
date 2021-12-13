@@ -5,6 +5,8 @@ import {BsEyeSlash, BsEye} from 'react-icons/bs'
 import { StyledLink } from '../../components/style';
 import LoginNavbar from '../../components/Navbar/LoginNavbar';
 import SignUpButton from '../../components/Button/SignUp';
+import FacebookAuth from '../../components/FacebookLogin';
+import GoogleAuth from '../../components/GoogleLogin';
 import {BackgroundStyle,
         RightDiv, 
         LeftDiv,
@@ -245,6 +247,9 @@ const SignUpPage =()=>{
                     <PassThrough src={process.env.PUBLIC_URL + './Rectangle 6.svg'} alt='pass_through'/>
                 </PassThroughDiv> 
 
+                
+                <FacebookAuth/>
+                <GoogleAuth/>
                 <Social src={process.env.PUBLIC_URL + './google.svg'} alt='google'/>
                 <Social src={process.env.PUBLIC_URL + './facebook.svg'} alt='facebook'/>
                 <Social src={process.env.PUBLIC_URL + './twitter.svg'} alt='twitter'/>

@@ -1,5 +1,5 @@
 import {BtnStyle, BtnDiv, BtnText} from '../style';
-import FiPocket from '../../SvgIcons/FiPocket';
+import {FiPocket} from '../../SvgIcons/FiPocket';
 
 const FinishedButton =({text})=> {
     return (
