@@ -4,9 +4,10 @@ import Logo from '../LogoComp';
 import Hamburger from '../LogoComp/hamburger_icon';
 import CreateAccount from '../../Button/CreateAccount';
 import {StyledLink} from '../../style';
+import Dropdown from '../../MenuDropdown'
 
 
-const LandingNavbar =()=> {
+const LandingNavbar =(props)=> {
     return(
            <NavbarStyle>
                <div>
@@ -14,6 +15,7 @@ const LandingNavbar =()=> {
                         <Logo/>
                     </StyledLink>
                 </div>
+                <Dropdown/>
                 <RightNavDiv>
                     <LoginDiv>
                         <StyledLink to='/login'>
@@ -29,16 +31,16 @@ const LandingNavbar =()=> {
                     </LoginDiv>
                     <AccountDiv>
                             <StyledLink to='/sign-up'>
-                                    <CreateAccount/>
+                                <CreateAccount/>
                             </StyledLink>      
                     </AccountDiv>
                    <AccountDivHamBurger>
-                        <Hamburger/> 
+                        <Hamburger showMenu={props.show} /> 
                    </AccountDivHamBurger>
                 </RightNavDiv>
-               
            </NavbarStyle> 
     )
+
 }
 
 export default LandingNavbar;

@@ -60,8 +60,10 @@ export const LoginDiv = styled.div`
         margin-left: 5%;
     } */
 `
-export const HamburgerDiv = styled.div`
+export const HamburgerDiv = styled.button`
     display: none;
+    background-color: #ffffff;
+    border: none;
     margin-left: 60px;
     margin-top: 39px;
     margin-right: 13px;

@@ -57,6 +57,15 @@ export const LeftDiv = styled.div`
         margin-left: 10px;
     }
 `
+export const MenuDiv = styled.div`
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    margin-left: 60px;
+    @media only screen and (max-width : 450px){
+        margin-left: 10px;
+    }     
+`
 
 export const BoldText = styled.span`
     width: 308px;
