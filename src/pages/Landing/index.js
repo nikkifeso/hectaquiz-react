@@ -1,7 +1,7 @@
 import LandingNavbar from '../../components/Navbar/LandingNavbar';
 import { useState } from 'react';
 import {BackgroundStyle,
-     BackgroundMobile1,
+      BackgroundMobile1,
       BrainDesign, 
       BoldText, 
       LeftDiv, 
