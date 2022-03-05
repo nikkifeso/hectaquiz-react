@@ -1,9 +1,9 @@
 import React from 'react';
-import {HamburgerDiv } from '../style';
+import {HamburgerDiv} from '../style';
 
-const Hamburger =()=> {
+const Hamburger =(props)=> {
     return(
-           <HamburgerDiv>
+           <HamburgerDiv onClick={props.showMenu}>
                <img src={process.env.PUBLIC_URL + './hamburger.svg'} alt="logo"/>
            </HamburgerDiv>
 

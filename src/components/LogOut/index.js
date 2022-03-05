@@ -1,5 +1,6 @@
-const logout = () => {
-    localStorage.removeItem("user");
+const Logout = () => {
+    localStorage.clear();
+    window.location.href = '/';
 };
 
-export default logout;
+export default Logout;
